@@ -11,6 +11,7 @@ var server = http.createServer();
 
 var HtmlDir = __dirname + '/html/';
 
+
 server.on('request',function(req, res){
     var urlStr = url.parse( req.url );
     switch(urlStr.pathname){
